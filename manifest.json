@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "name": "知乎屏蔽",
+    "description": "屏蔽首页视频推荐和广告",
+    "content_scripts": [
+        {
+            "matches": ["*://www.zhihu.com/"],
+            "js": ["js/hidden.js"],
+            "css": ["css/hidden.css"]
+        }
+    ]
+}
